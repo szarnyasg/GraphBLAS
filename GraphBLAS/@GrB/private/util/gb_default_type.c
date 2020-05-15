@@ -83,7 +83,7 @@ GrB_Type gb_default_type        // return the default type to use
     {
 
         // A is int64: optype must be signed, and at least 64
-        // bits (if integer).  float and float complex are OK
+        // bits (if integer).  float and float _Complex are OK
         if (btype == GrB_INT8   ||
             btype == GrB_INT16  ||
             btype == GrB_INT32  ||
@@ -127,7 +127,7 @@ GrB_Type gb_default_type        // return the default type to use
     {
 
         // A is uint64: optype can be unsigned if B is also unsigned.
-        // optype must be at least 64 bits.  float and float complex OK.
+        // optype must be at least 64 bits.  float and float _Complex OK.
         if (btype == GrB_UINT8  ||
             btype == GrB_UINT16 ||
             btype == GrB_UINT32 ) return (GrB_UINT64) ;
@@ -164,7 +164,7 @@ GrB_Type gb_default_type        // return the default type to use
     else if (atype == GxB_FC32)
     {
 
-        // A is float complex: optype must be float complex
+        // A is float _Complex: optype must be float _Complex
         // or double _Complex
         if (btype == GrB_FP64   ||
             btype == GxB_FC64   ) return (GxB_FC64) ;

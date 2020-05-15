@@ -416,7 +416,7 @@ typedef enum
     GB_UINT64_code  = 8,
     GB_FP32_code    = 9,        // float ('single' in MATLAB)
     GB_FP64_code    = 10,       // double
-    GB_FC32_code    = 11,       // float complex ('single complex' in MATLAB)
+    GB_FC32_code    = 11,       // float _Complex ('single complex' in MATLAB)
     GB_FC64_code    = 12,       // double _Complex
     GB_UDT_code     = 13        // void *, user-defined type
 }

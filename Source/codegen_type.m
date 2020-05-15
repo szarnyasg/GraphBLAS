@@ -40,7 +40,7 @@ switch (type)
     case 'double'
         fname = 'fp64' ;
         bits = 64 ;
-    case { 'float complex', 'GxB_FC32_t' }
+    case { 'float _Complex', 'GxB_FC32_t' }
         fname = 'fc32' ;
         bits = 64 ;
     case { 'double _Complex', 'GxB_FC64_t' }

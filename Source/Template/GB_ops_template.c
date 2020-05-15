@@ -119,7 +119,7 @@ GB_OP1 (GxB_, ONE, "one") ;
 
 #elif defined ( GB_FLOAT_COMPLEX )
 
-    // z = f(x) where x is float complex, and the type of z is listed below:
+    // z = f(x) where x is float _Complex, and the type of z is listed below:
     GB_OP1z (GxB_, ABS       , "abs"       , float  , GrB_FP32) ;
     GB_OP1z (GxB_, ISINF     , "isinf"     , bool   , GrB_BOOL) ;
     GB_OP1z (GxB_, ISNAN     , "isnan"     , bool   , GrB_BOOL) ;
@@ -224,7 +224,7 @@ GB_OP2 (GxB_, POW    , "pow"   )
 
 #if defined ( GB_FLOAT )
 
-    // z = cmplx(x,y) where z is float complex, x and y are float
+    // z = cmplx(x,y) where z is float _Complex, x and y are float
     GB_OP2z (GxB_, CMPLX, "cmplx", GxB_FC32_t, GxB_FC32)
 
 #endif

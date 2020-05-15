@@ -238,7 +238,7 @@
     // ANSI C11 complex types
     #include <complex.h>
     #undef I
-    typedef float  complex GxB_FC32_t ;
+    typedef float _Complex GxB_FC32_t ;
     typedef double _Complex GxB_FC64_t ;
 
     #ifndef CMPLX
@@ -257,8 +257,8 @@
         // gcc 6.2 on the the Mac doesn't #define CMPLXF
         #define GxB_CMPLXF(real,imag) \
         ( \
-            (float complex)((float)(real)) + \
-            (float complex)((float)(imag) * _Complex_I) \
+            (float _Complex)((float)(real)) + \
+            (float _Complex)((float)(imag) * _Complex_I) \
         )
     #else
         // use the ANSI C11 CMPLX macro
@@ -522,7 +522,7 @@ GB_PUBLIC GrB_Type
     GrB_UINT64 ,        // in C: uint64_t           in MATLAB: uint64
     GrB_FP32   ,        // in C: float              in MATLAB: single
     GrB_FP64   ,        // in C: double             in MATLAB: double
-    GxB_FC32   ,        // in C: float complex      in MATLAB: single complex
+    GxB_FC32   ,        // in C: float _Complex      in MATLAB: single complex
     GxB_FC64   ;        // in C: double _Complex     in MATLAB: double _Complex
 
 // SPEC: complex types are an extension to the spec.
@@ -1517,7 +1517,7 @@ GrB_Info GrB_Monoid_new_FP64        // create a new double monoid
 ) ;
 
 GB_PUBLIC
-GrB_Info GxB_Monoid_new_FC32        // create a new float complex monoid
+GrB_Info GxB_Monoid_new_FC32        // create a new float _Complex monoid
 (
     GrB_Monoid *monoid,             // handle of monoid to create
     GrB_BinaryOp op,                // binary operator of the monoid
@@ -1696,7 +1696,7 @@ GrB_Info GxB_Monoid_terminal_new_FP64        // create a new double monoid
 ) ;
 
 GB_PUBLIC
-GrB_Info GxB_Monoid_terminal_new_FC32   // create a new float complex monoid
+GrB_Info GxB_Monoid_terminal_new_FC32   // create a new float _Complex monoid
 (
     GrB_Monoid *monoid,             // handle of monoid to create
     GrB_BinaryOp op,                // binary operator of the monoid
@@ -6928,7 +6928,7 @@ GB_PUBLIC GrB_Monoid
 //      These 3 semirings are named below, but are internally remapped to
 //      any_pair_bool semiring.
 
-// 54 complex semirings: TxT -> T where T is float complex or double _Complex:
+// 54 complex semirings: TxT -> T where T is float _Complex or double _Complex:
 
 //      3 complex monoids: PLUS, TIMES, ANY
 //      2 complex types

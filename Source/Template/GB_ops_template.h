@@ -305,7 +305,7 @@ inline void GB (MINV_f) (GB_TYPE *z, const GB_TYPE *x)
 #elif defined ( GB_FLOAT_COMPLEX )
 
     //--------------------------------------------------------------------------
-    // float complex
+    // float _Complex
     //--------------------------------------------------------------------------
 
     GB_OP (SQRT  , csqrtf   )
@@ -388,7 +388,7 @@ inline void GB (MINV_f) (GB_TYPE *z, const GB_TYPE *x)
 // unary operators z=f(x) where z and x have different types
 //------------------------------------------------------------------------------
 
-// x is float, double, float complex, or double _Complex
+// x is float, double, float _Complex, or double _Complex
 
 #undef  GB_OP
 #define GB_OP(op,expression,z_t,x_t)                                \
@@ -1053,7 +1053,7 @@ inline void GB (NE_f) (GB_Zbool_X_Y_ARGS)
     #undef GB_CAST_FUNC
 
     //--------------------------------------------------------------------------
-    // typecast to any real type from float complex
+    // typecast to any real type from float _Complex
     //--------------------------------------------------------------------------
 
     inline void GB_CAST_NAME (GxB_FC32_t)
@@ -1136,7 +1136,7 @@ inline void GB (NE_f) (GB_Zbool_X_Y_ARGS)
     inline void GB_CAST_NAME (double  ) GB_CAST_FUNCTION_RtoC (double  )
 
     //--------------------------------------------------------------------------
-    // typecast to any complex type from float complex
+    // typecast to any complex type from float _Complex
     //--------------------------------------------------------------------------
 
     inline void GB_CAST_NAME (GxB_FC32_t)

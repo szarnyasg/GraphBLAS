@@ -946,10 +946,10 @@ inline int64_t GB_bitshift_int64 (int64_t x, int8_t k)
 // The ANSI C11 math.h header defines the ceil, floor, round, trunc,
 // exp2, expm1, log10, log1pm, or log2 functions for float and double,
 // but the corresponding functions do not appear in the ANSI C11 complex.h.
-// These functions are used instead, for float complex and double _Complex.
+// These functions are used instead, for float _Complex and double _Complex.
 
 //------------------------------------------------------------------------------
-// z = ceil (x) for float complex
+// z = ceil (x) for float _Complex
 //------------------------------------------------------------------------------
 
 inline GxB_FC32_t GB_cceilf (GxB_FC32_t x)
@@ -967,7 +967,7 @@ inline GxB_FC64_t GB_cceil (GxB_FC64_t x)
 }
 
 //------------------------------------------------------------------------------
-// z = floor (x) for float complex
+// z = floor (x) for float _Complex
 //------------------------------------------------------------------------------
 
 inline GxB_FC32_t GB_cfloorf (GxB_FC32_t x)
@@ -985,7 +985,7 @@ inline GxB_FC64_t GB_cfloor (GxB_FC64_t x)
 }
 
 //------------------------------------------------------------------------------
-// z = round (x) for float complex
+// z = round (x) for float _Complex
 //------------------------------------------------------------------------------
 
 inline GxB_FC32_t GB_croundf (GxB_FC32_t x)
@@ -1003,7 +1003,7 @@ inline GxB_FC64_t GB_cround (GxB_FC64_t x)
 }
 
 //------------------------------------------------------------------------------
-// z = trunc (x) for float complex
+// z = trunc (x) for float _Complex
 //------------------------------------------------------------------------------
 
 inline GxB_FC32_t GB_ctruncf (GxB_FC32_t x)
@@ -1021,7 +1021,7 @@ inline GxB_FC64_t GB_ctrunc (GxB_FC64_t x)
 }
 
 //------------------------------------------------------------------------------
-// z = exp2 (x) for float complex
+// z = exp2 (x) for float _Complex
 //------------------------------------------------------------------------------
 
 inline GxB_FC32_t GB_cexp2f (GxB_FC32_t x)
@@ -1049,7 +1049,7 @@ inline GxB_FC64_t GB_cexp2 (GxB_FC64_t x)
 }
 
 //------------------------------------------------------------------------------
-// z = expm1 (x) for float complex
+// z = expm1 (x) for float _Complex
 //------------------------------------------------------------------------------
 
 inline GxB_FC32_t GB_cexpm1f (GxB_FC32_t x)
@@ -1073,7 +1073,7 @@ inline GxB_FC64_t GB_cexpm1 (GxB_FC64_t x)
 }
 
 //------------------------------------------------------------------------------
-// z = log1p (x) for float complex
+// z = log1p (x) for float _Complex
 //------------------------------------------------------------------------------
 
 inline GxB_FC32_t GB_clog1pf (GxB_FC32_t x)
@@ -1095,7 +1095,7 @@ inline GxB_FC64_t GB_clog1p (GxB_FC64_t x)
 }
 
 //------------------------------------------------------------------------------
-// z = log10 (x) for float complex
+// z = log10 (x) for float _Complex
 //------------------------------------------------------------------------------
 
 // log_e (10) in single precision
@@ -1121,7 +1121,7 @@ inline GxB_FC64_t GB_clog10 (GxB_FC64_t x)
 }
 
 //------------------------------------------------------------------------------
-// z = log2 (x) for float complex
+// z = log2 (x) for float _Complex
 //------------------------------------------------------------------------------
 
 // log_e (2) in single precision
@@ -1147,7 +1147,7 @@ inline GxB_FC64_t GB_clog2 (GxB_FC64_t x)
 }
 
 //------------------------------------------------------------------------------
-// z = isinf (x) for float complex
+// z = isinf (x) for float _Complex
 //------------------------------------------------------------------------------
 
 inline bool GB_cisinff (GxB_FC32_t x)
@@ -1165,7 +1165,7 @@ inline bool GB_cisinf (GxB_FC64_t x)
 }
 
 //------------------------------------------------------------------------------
-// z = isnan (x) for float complex
+// z = isnan (x) for float _Complex
 //------------------------------------------------------------------------------
 
 inline bool GB_cisnanf (GxB_FC32_t x)
@@ -1183,7 +1183,7 @@ inline bool GB_cisnan (GxB_FC64_t x)
 }
 
 //------------------------------------------------------------------------------
-// z = isfinite (x) for float complex
+// z = isfinite (x) for float _Complex
 //------------------------------------------------------------------------------
 
 inline bool GB_cisfinitef (GxB_FC32_t x)

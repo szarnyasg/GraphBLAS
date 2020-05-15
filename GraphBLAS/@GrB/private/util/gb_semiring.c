@@ -42,7 +42,7 @@
 //      11 multiply operators:
 //          FIRST, SECOND, PAIR, LOR, LAND, LXOR, EQ, GT, LT, GE, LE
 
-// 54 complex semirings: TxT -> T where T is float complex or double _Complex:
+// 54 complex semirings: TxT -> T where T is float _Complex or double _Complex:
 
 //      3 complex monoids: PLUS, TIMES, ANY
 //      2 complex types

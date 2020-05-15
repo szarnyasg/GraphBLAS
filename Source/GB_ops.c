@@ -30,7 +30,7 @@ GB_opaque_GrB_UINT64 = {GB_MAGIC, sizeof(uint64_t), GB_UINT64_code, "uint64_t"},
 GB_opaque_GrB_FP32   = {GB_MAGIC, sizeof(float),    GB_FP32_code  , "float"   },
 GB_opaque_GrB_FP64   = {GB_MAGIC, sizeof(double),   GB_FP64_code  , "double"  },
 GB_opaque_GxB_FC32   =
-    {GB_MAGIC, sizeof (GxB_FC32_t), GB_FC32_code, "float complex" },
+    {GB_MAGIC, sizeof (GxB_FC32_t), GB_FC32_code, "float _Complex" },
 GB_opaque_GxB_FC64   =
     {GB_MAGIC, sizeof (GxB_FC64_t), GB_FC64_code, "double _Complex"} ;
 
