@@ -44,7 +44,7 @@ end
 
 % 6 complex
 ops = { '+', '*', 'any' } ;
-types = { 'single complex', 'double complex' } ;
+types = { 'single complex', 'double _Complex' } ;
 for k1 = 1:3
     op = ops {k1} ;
     fprintf ('\nop [ %s ]=============================================\n', op) ;

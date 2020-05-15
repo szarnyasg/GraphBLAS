@@ -52,7 +52,7 @@ else
         contains (GrB.type (B), 'single'))
         ctype = 'single complex' ;
     else
-        ctype = 'double complex' ;
+        ctype = 'double _Complex' ;
     end
 end
 

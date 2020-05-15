@@ -131,7 +131,7 @@ GB_OP1 (GxB_, ONE, "one") ;
 
 #elif defined ( GB_DOUBLE_COMPLEX )
 
-    // z = f(x) where x is double complex, and the type of z is listed below:
+    // z = f(x) where x is double _Complex, and the type of z is listed below:
     GB_OP1z (GxB_, ABS       , "abs"       , double , GrB_FP64) ;
     GB_OP1z (GxB_, ISINF     , "isinf"     , bool   , GrB_BOOL) ;
     GB_OP1z (GxB_, ISNAN     , "isnan"     , bool   , GrB_BOOL) ;
@@ -231,7 +231,7 @@ GB_OP2 (GxB_, POW    , "pow"   )
 
 #if defined ( GB_DOUBLE )
 
-    // z = cmplx(x,y) where z is double complex, x and y are double
+    // z = cmplx(x,y) where z is double _Complex, x and y are double
     GB_OP2z (GxB_, CMPLX, "cmplx", GxB_FC64_t, GxB_FC64)
 
 #endif

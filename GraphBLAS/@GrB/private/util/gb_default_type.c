@@ -155,7 +155,7 @@ GrB_Type gb_default_type        // return the default type to use
     else if (atype == GrB_FP64)
     {
 
-        // A is double: optype must be double or double complex
+        // A is double: optype must be double or double _Complex
         if (btype == GxB_FC32   ||
             btype == GxB_FC64   ) return (GxB_FC64) ;
         return (GrB_FP64) ;
@@ -165,7 +165,7 @@ GrB_Type gb_default_type        // return the default type to use
     {
 
         // A is float complex: optype must be float complex
-        // or double complex
+        // or double _Complex
         if (btype == GrB_FP64   ||
             btype == GxB_FC64   ) return (GxB_FC64) ;
         return (GxB_FC32) ;
@@ -174,7 +174,7 @@ GrB_Type gb_default_type        // return the default type to use
     else if (atype == GxB_FC64)
     {
 
-        // A is double complex: optype must be double complex
+        // A is double _Complex: optype must be double _Complex
         return (GxB_FC64) ;
 
     }

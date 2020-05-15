@@ -16,6 +16,6 @@ function C = double (G)
 if (isreal (G))
     C = gbsparse (G.opaque, 'double') ;
 else
-    C = gbsparse (G.opaque, 'double complex') ;
+    C = gbsparse (G.opaque, 'double _Complex') ;
 end
 

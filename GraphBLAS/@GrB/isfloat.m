@@ -1,7 +1,7 @@
 function s = isfloat (G)
 %ISFLOAT true for floating-point GraphBLAS matrices.
 % isfloat (G) is true if the GraphBLAS matrix G has a type of 'double',
-% 'single', 'single complex', or 'double complex'.
+% 'single', 'single complex', or 'double _Complex'.
 %
 % See also GrB/isnumeric, GrB/isreal, GrB/isinteger, GrB/islogical,
 % GrB.type, GrB/isa, GrB.

@@ -32,7 +32,7 @@ GB_opaque_GrB_FP64   = {GB_MAGIC, sizeof(double),   GB_FP64_code  , "double"  },
 GB_opaque_GxB_FC32   =
     {GB_MAGIC, sizeof (GxB_FC32_t), GB_FC32_code, "float complex" },
 GB_opaque_GxB_FC64   =
-    {GB_MAGIC, sizeof (GxB_FC64_t), GB_FC64_code, "double complex"} ;
+    {GB_MAGIC, sizeof (GxB_FC64_t), GB_FC64_code, "double _Complex"} ;
 
 // extern predefined types (handles to opaque types)
 GrB_Type

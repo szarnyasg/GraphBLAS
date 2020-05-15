@@ -5,7 +5,7 @@ function gbtest42
 % Reserved. http://suitesparse.com.  See GraphBLAS/Doc/License.txt.
 
 rng ('default') ;
-types = { 'single', 'double', 'single complex', 'double complex' } ;
+types = { 'single', 'double', 'single complex', 'double _Complex' } ;
 
 for k1 = 1:length(types)
     atype = types {k1} ;

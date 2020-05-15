@@ -54,7 +54,7 @@ classdef GrB
 %       'double'    64-bit floating-point (real, not complex)
 %       'single'    32-bit floating-point (real, not complex)
 %       'single complex'  32-bit single complex
-%       'double complex'  64-bit double complex (also just 'complex')
+%       'double _Complex'  64-bit double _Complex (also just 'complex')
 %       'logical'   8-bit boolean
 %       'int8'      8-bit signed integer
 %       'int16'     16-bit signed integer
@@ -66,7 +66,7 @@ classdef GrB
 %       'uint64'    64-bit unsigned integer
 %
 %   In MATLAB matrices, complex is an attribute, not a class.  In GrB
-%   matrices, 'double complex' and 'single complex' are treated as their
+%   matrices, 'double _Complex' and 'single complex' are treated as their
 %   own data types.
 %
 % ---------------

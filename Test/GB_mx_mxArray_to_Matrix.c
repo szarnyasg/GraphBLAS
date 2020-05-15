@@ -25,7 +25,7 @@
 // Otherwise, its pattern (A->p, A->h, and A->i) may be a shallow copy, and
 // A->x is a shallow copy if the MATLAB matrix is 'logical' or 'double'. 
 
-// If the MATLAB matrix is double complex, it becomes a GraphBLAS
+// If the MATLAB matrix is double _Complex, it becomes a GraphBLAS
 // Complex or GxB_FC64 matrix.
 
 // A->x is always a deep copy for other types, since it must be typecasted from
@@ -293,7 +293,7 @@ GrB_Matrix GB_mx_mxArray_to_Matrix     // returns GraphBLAS version of A
     if (A->x_shallow)
     {
         // the MATLAB matrix and GraphBLAS matrix have the same type; (logical,
-        // double, or double complex), and a deep copy is not requested.  Just
+        // double, or double _Complex), and a deep copy is not requested.  Just
         // make a shallow copy.
         A->nzmax = anzmax ;
         A->x = Mx ;

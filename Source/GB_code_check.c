@@ -105,7 +105,7 @@ GrB_Info GB_code_check          // print an entry using a type code
 
         case GB_FC64_code:
             z = *((GxB_FC64_t *) x) ;
-            GBPR ("double complex (%.15g,%.15g)", creal (z), cimag (z)) ;
+            GBPR ("double _Complex (%.15g,%.15g)", creal (z), cimag (z)) ;
             break ;
 
         #else

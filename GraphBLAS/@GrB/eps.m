@@ -18,7 +18,7 @@ switch (GrB.type (G))
     case { 'double' }
         C = GrB (eps (double (full (G)))) ;
 
-    case { 'single complex', 'double complex' }
+    case { 'single complex', 'double _Complex' }
         C = max (eps (real (G)), eps (imag (G))) ;
 
     otherwise

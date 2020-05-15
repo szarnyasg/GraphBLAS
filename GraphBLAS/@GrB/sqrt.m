@@ -24,7 +24,7 @@ switch (GrB.type (G))
 
         % signed integer, or double
         if (min (G, [ ], 'all') < 0)
-            C = GrB.apply ('sqrt', GrB (G, 'double complex')) ;
+            C = GrB.apply ('sqrt', GrB (G, 'double _Complex')) ;
         else
             C = GrB.apply ('sqrt', GrB (G, 'double')) ;
         end
@@ -40,7 +40,7 @@ switch (GrB.type (G))
 
     otherwise
 
-        % single complex or double complex
+        % single complex or double _Complex
         C = GrB.apply ('sqrt', G) ;
 
 end

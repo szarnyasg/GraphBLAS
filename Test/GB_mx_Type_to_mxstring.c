@@ -31,8 +31,8 @@ mxArray *GB_mx_Type_to_mxstring        // returns a MATLAB string
         case GB_FP32_code    : return (mxCreateString ("single")) ;
         case GB_FP64_code    : return (mxCreateString ("double")) ;
         case GB_FC32_code    : return (mxCreateString ("single complex")) ;
-        case GB_FC64_code    : return (mxCreateString ("double complex")) ;
-        case GB_UDT_code     : return (mxCreateString ("double complex")) ;
+        case GB_FC64_code    : return (mxCreateString ("double _Complex")) ;
+        case GB_UDT_code     : return (mxCreateString ("double _Complex")) ;
         default              : return (mxCreateString ("other")) ;
     }
 }

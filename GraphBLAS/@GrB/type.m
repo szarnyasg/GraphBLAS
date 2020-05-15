@@ -8,8 +8,8 @@ function s = type (X)
 % MATLAB convention.
 %
 % If X is not a GraphBLAS matrix, GrB.type (X) is the same as class (X),
-% except when X is a MATLAB single complex or double complex matrix, which
-% case GrB.type (X) is 'single complex' or 'double complex', respectively.
+% except when X is a MATLAB single complex or double _Complex matrix, which
+% case GrB.type (X) is 'single complex' or 'double _Complex', respectively.
 %
 % See also class, GrB.
 

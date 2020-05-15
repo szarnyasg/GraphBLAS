@@ -35,7 +35,7 @@ function C = random (varargin)
 %           which is then typecasted to the requested. integer type. This
 %           scaling applies to both the 'uniform' and 'normal'
 %           distribution.  To construct a random complex matrix, pass in
-%           [lo hi] as a single complex or double complex parameter.
+%           [lo hi] as a single complex or double _Complex parameter.
 %
 %           With the normal distribution, [lo hi] specifies the mean (lo)
 %           and the standard deviation (hi) of the final distribution.

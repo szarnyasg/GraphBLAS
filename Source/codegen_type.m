@@ -43,7 +43,7 @@ switch (type)
     case { 'float complex', 'GxB_FC32_t' }
         fname = 'fc32' ;
         bits = 64 ;
-    case { 'double complex', 'GxB_FC64_t' }
+    case { 'double _Complex', 'GxB_FC64_t' }
         fname = 'fc64' ;
         bits = 128 ;
     case 'GB_void'

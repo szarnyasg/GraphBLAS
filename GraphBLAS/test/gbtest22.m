@@ -16,7 +16,7 @@ for k = 1:length (types)
         c = GrB.reduce (c, '|', '|', gbtest_cast (A, 'logical')) ; %#ok<*NASGU>
     else
         % c = ones (1, 1, type) ;
-        is_double_complex = isequal (type, 'double complex') ;
+        is_double_complex = isequal (type, 'double _Complex') ;
         is_single_complex = isequal (type, 'single complex') ;
 
         if (is_double_complex)

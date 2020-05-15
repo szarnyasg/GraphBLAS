@@ -12,17 +12,17 @@
 % ------------------------------------------------
 %
 %     MATLAB supports 3 kinds of sparse matrices: logical, double, and
-%     double complex.  For single precision floationg-point (real or
+%     double _Complex.  For single precision floationg-point (real or
 %     complex), and integer matrices, MATLAB only supports dense matrices,
 %     not sparse.
 %
 %     GraphBLAS supports all types:  logical, int8, int16, int32, int64,
 %     uint8, uint16, uint32, uint64, single, double, single complex, and
-%     double complex.  GraphBLAS has only a single class: the GrB object.
+%     double _Complex.  GraphBLAS has only a single class: the GrB object.
 %     It uses a 'type' to represent these different data types.  See help
 %     GrB.type for more details.
 %
-%     'single complex' and 'double complex' matrices were added to
+%     'single complex' and 'double _Complex' matrices were added to
 %     GraphBLAS v3.3, as the built-in types GxB_FC32 and GxB_FC64.
 %
 % ------------------------------------------------
@@ -37,7 +37,7 @@
 %     might be meaningful.  The value zero is the additive identity for
 %     the single monoid supported by MATLAB (the '+' of the '+.*'
 %     conventional semiring).  MATLAB has only two semirings ('+.*.double'
-%     and '+.*.double complex'). GraphBLAS supports both of those, but
+%     and '+.*.double _Complex'). GraphBLAS supports both of those, but
 %     many more (1000s), many of which have a different identity value.
 %     In a shortest-path problem, for example, an edge of weight zero is
 %     very different than no edge at all (the identity is inf, for the

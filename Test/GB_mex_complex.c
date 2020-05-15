@@ -45,7 +45,7 @@ void mexFunction
     }
     if (mxIsLogical (A))
     {
-        mexErrMsgTxt ("A must be double or double complex") ;
+        mexErrMsgTxt ("A must be double or double _Complex") ;
     }
 
     int64_t *Ap = (int64_t *) mxGetJc (A) ;

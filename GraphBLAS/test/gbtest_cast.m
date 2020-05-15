@@ -3,7 +3,7 @@ function C = gbtest_cast (A, type)
 % C = gbtest_cast (A, type) is identical to C = cast (A, type) when type
 % is a valid MATLAB class ('logical', 'int8', 'int16', 'int32', 'int64',
 % 'uint8', 'uint16', 'uint32', 'uint64', 'single', 'double').  Otherwise,
-% A is converted to a single complex or double complex matrix C.
+% A is converted to a single complex or double _Complex matrix C.
 %
 % A must be a full MATLAB matrix (not sparse).  C is a full MATLAB matrix.
 % To cast any matrix to a GraphBLAS matrix instead, use C = GrB (A, type).

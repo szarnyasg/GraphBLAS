@@ -42,7 +42,7 @@
 //      11 multiply operators:
 //          FIRST, SECOND, PAIR, LOR, LAND, LXOR, EQ, GT, LT, GE, LE
 
-// 54 complex semirings: TxT -> T where T is float complex or double complex:
+// 54 complex semirings: TxT -> T where T is float complex or double _Complex:
 
 //      3 complex monoids: PLUS, TIMES, ANY
 //      2 complex types
@@ -259,7 +259,7 @@ GrB_Semiring gb_semiring            // built-in semiring, or NULL if error
     {
 
         //----------------------------------------------------------------------
-        // 27 double complex semirings
+        // 27 double _Complex semirings
         //----------------------------------------------------------------------
 
         switch (mult_opcode)

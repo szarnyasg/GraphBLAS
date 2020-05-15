@@ -16,7 +16,7 @@ function C = GB_spec_op (op, A, B)
 %
 % op.optype: 'logical', 'int8', 'uint8', 'int16', 'uint16', 'int32',
 %   'uint32', 'int64', 'uint64', 'single', 'double', 'single complex'
-%   or 'double complex'.
+%   or 'double _Complex'.
 %
 % The class of Z is the same as the class of the output of the operator,
 % which is op.optype except for 'eq', 'ne', 'gt', 'lt', 'ge', 'le',

@@ -28,7 +28,7 @@ GrB_Type GB_mx_Type                    // returns a GraphBLAS type
     {
         switch (mxGetClassID (X))
         {
-            // only single complex and double complex are supported
+            // only single complex and double _Complex are supported
             case mxSINGLE_CLASS   : return (GxB_FC32  ) ;
             case mxDOUBLE_CLASS   : return (Complex   ) ;
             default               : return (NULL      ) ;

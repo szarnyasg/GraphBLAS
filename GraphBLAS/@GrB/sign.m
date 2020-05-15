@@ -26,7 +26,7 @@ elseif (contains (type, 'int'))
 
 elseif (contains (type, 'complex'))
 
-    % single or double complex
+    % single or double _Complex
     C = GrB.emult (G, '/', abs (G)) ;
 
 else

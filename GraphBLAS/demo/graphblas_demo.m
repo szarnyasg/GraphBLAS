@@ -451,7 +451,7 @@ err = norm (C1-C2,1)
 % MATLAB supports integer arithmetic on its full matrices, using int8,
 % int16, int32, int64, uint8, uint16, uint32, or uint64 data types.  None
 % of these integer data types can be used to construct a MATLAB sparse
-% matrix, which can only be double, double complex, or logical.
+% matrix, which can only be double, double _Complex, or logical.
 % Furthermore, C=A*B is not defined for integer types in MATLAB, except
 % when A and/or B are scalars.
 %

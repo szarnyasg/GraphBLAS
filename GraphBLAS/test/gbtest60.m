@@ -7,7 +7,7 @@ function gbtest60
 % 8 signed types:
 signed_types   = { 'double', 'single', ...
     'int8', 'int16', 'int32', 'int64', ...
-    'single complex', 'double complex' } ;
+    'single complex', 'double _Complex' } ;
 
 % 5 unsigned types:
 unsigned_types = { 'logical', 'uint8', 'uint16', 'uint32', 'uint64' } ;

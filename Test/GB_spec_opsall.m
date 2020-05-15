@@ -14,7 +14,7 @@ function [binops unary_ops add_ops types semirings selops] = GB_spec_opsall
 types.all = {
 'logical', ...
 'int8', 'int16', 'int32', 'int64', 'uint8', 'uint16', 'uint32', 'uint64', ...
-'single', 'double', 'single complex', 'double complex' } ;
+'single', 'double', 'single complex', 'double _Complex' } ;
 
 % all but complex
 types.real = {
@@ -27,13 +27,13 @@ types.int = {
 'int8', 'int16', 'int32', 'int64', 'uint8', 'uint16', 'uint32', 'uint64' } ;
 
 % floating-point types
-types.float = { 'single', 'double', 'single complex', 'double complex'} ;
+types.float = { 'single', 'double', 'single complex', 'double _Complex'} ;
 
 % floating-point real
 types.fpreal = { 'single', 'double' } ;
 
 % complex
-types.complex = { 'single complex', 'double complex'} ;
+types.complex = { 'single complex', 'double _Complex'} ;
 
 %-------------------------------------------------------------------------------
 % binary ops
@@ -233,7 +233,7 @@ end
 for mult = {'first', 'second', 'pair', 'plus', 'minus', ...
             'rminus', 'times', 'div', 'rdiv' }
     for add = { 'plus', 'times', 'any' }
-        for c = { 'single complex', 'double complex' }
+        for c = { 'single complex', 'double _Complex' }
             n = n + 1 ;
             s = struct ('multiply', mult{1}, 'add', add{1}, 'class', c{1}) ;
             semirings {n} = s ;

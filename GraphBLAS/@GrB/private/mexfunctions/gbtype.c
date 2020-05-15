@@ -78,7 +78,7 @@ void mexFunction
             case mxDOUBLE_CLASS   :
                 if (is_complex)
                 {
-                    c = mxCreateString ("double complex") ;
+                    c = mxCreateString ("double _Complex") ;
                 }
                 else
                 {

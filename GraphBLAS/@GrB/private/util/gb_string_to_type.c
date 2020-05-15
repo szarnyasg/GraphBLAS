@@ -32,7 +32,7 @@ GrB_Type gb_string_to_type      // return the GrB_Type from a string
         return (GxB_FC32) ;
     }
 
-    if (MATCH (classname, "double complex") ||
+    if (MATCH (classname, "double _Complex") ||
         MATCH (classname, "complex"))
     {
         return (GxB_FC64) ;

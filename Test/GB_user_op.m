@@ -9,7 +9,7 @@ function [z tol] = GB_user_op (op, x, y)
 % false if the result in MATLAB and GraphBLAS should match exactly.
 %
 % No typecasting is done for user-defined operators.  x,y,z are either
-% double complex or double
+% double _Complex or double
 
 % SuiteSparse:GraphBLAS, Timothy A. Davis, (c) 2017-2020, All Rights Reserved.
 % http://suitesparse.com   See GraphBLAS/Doc/License.txt for license.

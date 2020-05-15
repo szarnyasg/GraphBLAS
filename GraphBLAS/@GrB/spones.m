@@ -9,7 +9,7 @@ function C = spones (G, type)
 %
 % C = spones (G) returns C as the same type as G if G is real.
 % If G is complex, C has the underlying real type of G ('single' if
-% G is 'single complex', or 'double' if G is 'double complex').
+% G is 'single complex', or 'double' if G is 'double _Complex').
 %
 % C = spones (G,type) returns C in the requested type ('double',
 % 'single', 'int8', ...).  For example, use C = spones (G, 'logical') to
@@ -24,7 +24,7 @@ if (nargin == 1)
     type = GrB.type (G) ;
     if (isequal (type, 'single complex'))
         C = GrB.apply ('1.single', G) ;
-    elseif (isequal (type, 'double complex'))
+    elseif (isequal (type, 'double _Complex'))
         C = GrB.apply ('1.double', G) ;
     else
         C = GrB.apply ('1', G) ;

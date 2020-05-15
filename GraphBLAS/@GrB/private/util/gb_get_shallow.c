@@ -173,7 +173,7 @@ GrB_Matrix gb_get_shallow   // return a shallow copy of MATLAB sparse matrix
         }
         else if (type == GxB_FC64)
         {
-            // MATLAB sparse or dense double complex matrix
+            // MATLAB sparse or dense double _Complex matrix
             Xx = mxGetComplexDoubles (X) ;
         }
         else if (type == GrB_BOOL)

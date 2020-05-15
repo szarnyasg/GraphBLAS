@@ -14,7 +14,7 @@ for k = 1:length (types)
     type = types {k} ;
     if (isequal (type, 'single complex'))
         B = complex (single (A), single (X)) ;
-    elseif (isequal (type, 'double complex'))
+    elseif (isequal (type, 'double _Complex'))
         B = complex (A, X) ;
     else
         B = gbtest_cast (A, type) ;

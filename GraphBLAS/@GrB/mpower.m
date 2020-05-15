@@ -32,7 +32,7 @@ if (isreal (b) && isfinite (b) && round (b) == b && b >= 0)
         type = GrB.type (A) ;
         if (isequal (type, 'single complex'))
             C = GrB.eye (n, 'single') ;
-        elseif (isequal (type, 'double complex'))
+        elseif (isequal (type, 'double _Complex'))
             C = GrB.eye (n, 'double') ;
         else
             % C is identity, of the same type as A

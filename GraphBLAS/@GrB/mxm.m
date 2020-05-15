@@ -36,7 +36,7 @@ function Cout = mxm (varargin)
 % form 'add.mult.type', where '.type' is optional.  For example,
 % '+.*.double' is the conventional semiring for numerical linear algebra,
 % used in MATLAB for C=A*B when A and B are double.  If A or B are double
-% complex, then the '+.*.double complex' semiring is used. GraphBLAS has
+% complex, then the '+.*.double _Complex' semiring is used. GraphBLAS has
 % many more semirings it can use.  See 'help GrB.semiringinfo' for more
 % details.
 %

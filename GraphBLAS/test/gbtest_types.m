@@ -19,6 +19,6 @@ types = {
     'uint32'
     'uint64'
     'single complex'
-    'double complex'
+    'double _Complex'
     } ;
 

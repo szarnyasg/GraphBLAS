@@ -3,7 +3,7 @@ function C = full (A, type, identity)
 % C = full (A, type, identity) converts the matrix A into a GraphBLAS
 % dense matrix C of the given type, by inserting identity values.  The
 % type may be any GraphBLAS type: 'double', 'single', 'single complex',
-% 'double complex', 'logical', 'int8' 'int16' 'int32' 'int64' 'uint8'
+% 'double _Complex', 'logical', 'int8' 'int16' 'int32' 'int64' 'uint8'
 % 'uint16' 'uint32' 'uint64', 
 %
 % If not present, the type defaults to the same type as G, and the

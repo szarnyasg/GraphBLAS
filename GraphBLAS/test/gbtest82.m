@@ -76,7 +76,7 @@ for m = nlist
                     M (1,1) = 1 ;
 
                     C = GrB.mxm (A, '+.*', B, desc) ;
-                    Cin = GrB (m, n, 'double complex') ;
+                    Cin = GrB (m, n, 'double _Complex') ;
                     CM = GrB.mxm (Cin, M, A, '+.*', B, desc) ;
 
                     A = double (A) ;

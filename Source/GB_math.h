@@ -307,7 +307,7 @@
 // complex division
 //------------------------------------------------------------------------------
 
-// z = x/y where z, x, and y are double complex.  The real and imaginary parts
+// z = x/y where z, x, and y are double _Complex.  The real and imaginary parts
 // are passed as separate arguments to this routine.  The NaN case is ignored
 // for the double relop yr >= yi.  Returns 1 if the denominator is zero, 0
 // otherwise.
@@ -404,7 +404,7 @@ inline GxB_FC64_t GB_FC64_div (GxB_FC64_t x, GxB_FC64_t y)
 
 inline GxB_FC32_t GB_FC32_div (GxB_FC32_t x, GxB_FC32_t y)
 {
-    // single complex division: typecast to double complex, do the division,
+    // single complex division: typecast to double _Complex, do the division,
     // and then typecast back to single complex
     double zr, zi ;
     GB_divcomplex ((double) crealf (x), (double) cimagf (x),
@@ -946,7 +946,7 @@ inline int64_t GB_bitshift_int64 (int64_t x, int8_t k)
 // The ANSI C11 math.h header defines the ceil, floor, round, trunc,
 // exp2, expm1, log10, log1pm, or log2 functions for float and double,
 // but the corresponding functions do not appear in the ANSI C11 complex.h.
-// These functions are used instead, for float complex and double complex.
+// These functions are used instead, for float complex and double _Complex.
 
 //------------------------------------------------------------------------------
 // z = ceil (x) for float complex
@@ -958,7 +958,7 @@ inline GxB_FC32_t GB_cceilf (GxB_FC32_t x)
 }
 
 //------------------------------------------------------------------------------
-// z = ceil (x) for double complex
+// z = ceil (x) for double _Complex
 //------------------------------------------------------------------------------
 
 inline GxB_FC64_t GB_cceil (GxB_FC64_t x)
@@ -976,7 +976,7 @@ inline GxB_FC32_t GB_cfloorf (GxB_FC32_t x)
 }
 
 //------------------------------------------------------------------------------
-// z = floor (x) for double complex
+// z = floor (x) for double _Complex
 //------------------------------------------------------------------------------
 
 inline GxB_FC64_t GB_cfloor (GxB_FC64_t x)
@@ -994,7 +994,7 @@ inline GxB_FC32_t GB_croundf (GxB_FC32_t x)
 }
 
 //------------------------------------------------------------------------------
-// z = round (x) for double complex
+// z = round (x) for double _Complex
 //------------------------------------------------------------------------------
 
 inline GxB_FC64_t GB_cround (GxB_FC64_t x)
@@ -1012,7 +1012,7 @@ inline GxB_FC32_t GB_ctruncf (GxB_FC32_t x)
 }
 
 //------------------------------------------------------------------------------
-// z = trunc (x) for double complex
+// z = trunc (x) for double _Complex
 //------------------------------------------------------------------------------
 
 inline GxB_FC64_t GB_ctrunc (GxB_FC64_t x)
@@ -1035,7 +1035,7 @@ inline GxB_FC32_t GB_cexp2f (GxB_FC32_t x)
 }
 
 //------------------------------------------------------------------------------
-// z = exp2 (x) for double complex
+// z = exp2 (x) for double _Complex
 //------------------------------------------------------------------------------
 
 inline GxB_FC64_t GB_cexp2 (GxB_FC64_t x)
@@ -1061,7 +1061,7 @@ inline GxB_FC32_t GB_cexpm1f (GxB_FC32_t x)
 }
 
 //------------------------------------------------------------------------------
-// z = expm1 (x) for double complex
+// z = expm1 (x) for double _Complex
 //------------------------------------------------------------------------------
 
 inline GxB_FC64_t GB_cexpm1 (GxB_FC64_t x)
@@ -1084,7 +1084,7 @@ inline GxB_FC32_t GB_clog1pf (GxB_FC32_t x)
 }
 
 //------------------------------------------------------------------------------
-// z = log1p (x) for double complex
+// z = log1p (x) for double _Complex
 //------------------------------------------------------------------------------
 
 inline GxB_FC64_t GB_clog1p (GxB_FC64_t x)
@@ -1108,7 +1108,7 @@ inline GxB_FC32_t GB_clog10f (GxB_FC32_t x)
 }
 
 //------------------------------------------------------------------------------
-// z = log10 (x) for double complex
+// z = log10 (x) for double _Complex
 //------------------------------------------------------------------------------
 
 // log_e (10) in double precision
@@ -1134,7 +1134,7 @@ inline GxB_FC32_t GB_clog2f (GxB_FC32_t x)
 }
 
 //------------------------------------------------------------------------------
-// z = log2 (x) for double complex
+// z = log2 (x) for double _Complex
 //------------------------------------------------------------------------------
 
 // log_e (2) in double precision
@@ -1156,7 +1156,7 @@ inline bool GB_cisinff (GxB_FC32_t x)
 }
 
 //------------------------------------------------------------------------------
-// z = isinf (x) for double complex
+// z = isinf (x) for double _Complex
 //------------------------------------------------------------------------------
 
 inline bool GB_cisinf (GxB_FC64_t x)
@@ -1174,7 +1174,7 @@ inline bool GB_cisnanf (GxB_FC32_t x)
 }
 
 //------------------------------------------------------------------------------
-// z = isnan (x) for double complex
+// z = isnan (x) for double _Complex
 //------------------------------------------------------------------------------
 
 inline bool GB_cisnan (GxB_FC64_t x)
@@ -1192,7 +1192,7 @@ inline bool GB_cisfinitef (GxB_FC32_t x)
 }
 
 //------------------------------------------------------------------------------
-// z = isfinite (x) for double complex
+// z = isfinite (x) for double _Complex
 //------------------------------------------------------------------------------
 
 inline bool GB_cisfinite (GxB_FC64_t x)

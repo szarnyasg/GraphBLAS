@@ -37,7 +37,7 @@ GrB_Type GB_mx_string_to_Type       // GrB_Type from the string
     if (MATCH (type, "single" )) return (GrB_FP32) ;
     if (MATCH (type, "double" )) return (GrB_FP64) ;
     if (MATCH (type, "single complex" )) return (GxB_FC32) ;
-    if (MATCH (type, "double complex" )) return (Complex) ;
+    if (MATCH (type, "double _Complex" )) return (Complex) ;
 
     return (NULL) ;
 }

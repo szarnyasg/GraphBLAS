@@ -18,7 +18,7 @@
 
 // optype_mx: a MATLAB string defining one of 11 operator types:
 //  'logical', 'int8', 'uint8', 'int16', 'uint16', 'int32', 'uint32', 'int64',
-//  'uint64', 'single', 'double', 'single complex', or 'double complex'
+//  'uint64', 'single', 'double', 'single complex', or 'double _Complex'
 
 // default_optype: default operator type if optype_mx is NULL or if
 // the type is not part of the string

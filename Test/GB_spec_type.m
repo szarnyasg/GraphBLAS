@@ -3,7 +3,7 @@ function s = GB_spec_type (X)
 % s = GB_spec_type (X) determines the class of X.  It is identical to s = class
 % (X), except when X is a complex matrix.  In this case the string ' complex'
 % is appended to the result of class (X).  If X is a single and iscomplex (X)
-% is true, then s is 'single complex', and if X double, s is 'double complex'.
+% is true, then s is 'single complex', and if X double, s is 'double _Complex'.
 % Complex integer matrices result in 'int8 complex' (for example), although
 % GraphBLAS does not currently handle those.
 %

@@ -22,7 +22,7 @@ if (nargout == 1)
             if (isequal (GrB.type (G), 'single'))
                 G = GrB (G, 'single complex') ;
             else
-                G = GrB (G, 'double complex') ;
+                G = GrB (G, 'double _Complex') ;
             end
         elseif (~isfloat (G))
             G = GrB (G, 'double') ;

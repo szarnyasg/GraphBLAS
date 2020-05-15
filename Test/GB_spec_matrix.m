@@ -46,7 +46,7 @@ function Cout = GB_spec_matrix (Cin, identity)
 % the implicit zero, with a change to the GraphBLAS data structure for the
 % matrix.
 %
-% However, MATLAB only supports logical, double, and double complex
+% However, MATLAB only supports logical, double, and double _Complex
 % sparse matrices, so to the MATLAB mimic functions GB_spec_* operate only on
 % dense matrices.  When a MATLAB sparse matrix is converted into a dense matrix,
 % the entries not in the pattern must be set to an explicit value: the

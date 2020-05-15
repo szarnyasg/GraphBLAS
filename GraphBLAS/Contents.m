@@ -15,7 +15,7 @@
 %   C = GrB (..., format) ;  create in a specified format
 %
 % The type can be 'double', 'single', 'logical', 'int8', 'int16', 'int32',
-% 'int64', 'uint8', 'uint16', 'uint32', 'uint64', 'double complex' or 'single
+% 'int64', 'uint8', 'uint16', 'uint32', 'uint64', 'double _Complex' or 'single
 % complex'.  The format is 'by row' or 'by col'.  
 %
 % Essentially all operators and many built-in MATLAB functions are overloaded

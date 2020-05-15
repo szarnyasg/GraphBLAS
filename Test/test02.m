@@ -63,7 +63,7 @@ for k = [false true]
     assert (isequal (A, C.matrix))  ;
     assert (spok (1*C.matrix) == 1) ;
 
-    C = GB_mex_dup (A, 'double complex', 1) ;
+    C = GB_mex_dup (A, 'double _Complex', 1) ;
     % C_matrix = full (C.matrix) ;
     assert (isequal (A, C.matrix))  ;
     assert (spok (1*C.matrix) == 1) ;

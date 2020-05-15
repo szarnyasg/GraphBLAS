@@ -32,7 +32,7 @@ char *GB_code_string            // return a static string for a type name
         case GB_FP32_code   : return ("float"       ) ;
         case GB_FP64_code   : return ("double"      ) ;
         case GB_FC32_code   : return ("float complex" ) ;
-        case GB_FC64_code   : return ("double complex") ;
+        case GB_FC64_code   : return ("double _Complex") ;
         case GB_UDT_code    : return ("user-defined") ;
         default             : return ("unknown!"    ) ;
     }

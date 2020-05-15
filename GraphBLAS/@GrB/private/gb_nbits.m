@@ -28,7 +28,7 @@ switch (atype)
         n = 32 ;
     case { 'int64', 'uint64', 'double', 'single complex' }
         n = 64 ;
-    case { 'double complex' }
+    case { 'double _Complex' }
         n = 128 ;
     otherwise
         error ('unknown type') ;

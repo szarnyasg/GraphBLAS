@@ -62,17 +62,17 @@ mxArray *gb_export_to_mxsparse  // return exported MATLAB sparse matrix S
     { 
 
         //----------------------------------------------------------------------
-        // typecast A to logical, double or double complex, and format by column
+        // typecast A to logical, double or double _Complex, and format by column
         //----------------------------------------------------------------------
 
-        // MATLAB supports only logical, double, and double complex sparse
+        // MATLAB supports only logical, double, and double _Complex sparse
         // matrices.  These correspond to GrB_BOOL, GrB_FP64, and GxB_FC64,
-        // respectively.  A is typecasted to logical, double or double complex,
+        // respectively.  A is typecasted to logical, double or double _Complex,
         // and converted to CSC format if not already in that format.
 
         if (type == GxB_FC32 || type == GxB_FC64)
         {
-            // typecast to double complex, by col
+            // typecast to double _Complex, by col
             type = GxB_FC64 ;
         }
         else if (type == GrB_BOOL)

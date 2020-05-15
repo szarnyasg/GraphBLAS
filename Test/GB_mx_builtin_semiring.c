@@ -196,7 +196,7 @@ GrB_Semiring GB_mx_builtin_semiring // built-in semiring, or NULL if error
     {
 
         //----------------------------------------------------------------------
-        // 27 double complex semirings
+        // 27 double _Complex semirings
         //----------------------------------------------------------------------
 
         switch (mult_opcode)

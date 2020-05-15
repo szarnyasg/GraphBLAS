@@ -59,7 +59,7 @@ GrB_Info GB_Type_check      // check a GraphBLAS Type
         case GB_FP32_code   : GBPR0 ("float"    ) ; break ;
         case GB_FP64_code   : GBPR0 ("double"   ) ; break ;
         case GB_FC32_code   : GBPR0 ("float complex" ) ; break ;
-        case GB_FC64_code   : GBPR0 ("double complex") ; break ;
+        case GB_FC64_code   : GBPR0 ("double _Complex") ; break ;
         case GB_UDT_code    : GBPR0 ("user-defined: [%s]", type->name) ; break ;
         default             : GBPR0 ("unknown type\n") ;
             return (GB_ERROR (GrB_INVALID_OBJECT, (GB_LOG,

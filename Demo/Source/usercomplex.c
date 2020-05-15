@@ -330,7 +330,7 @@ GrB_Info Complex_init (bool builtin_complex)
     GrB_Info info ;
 
 #if GxB_STDC_VERSION < 201112L
-    // the Complex type requires the ANSI C11 "double complex" type
+    // the Complex type requires the ANSI C11 "double _Complex" type
     builtin_complex = true ;
 #endif
 
@@ -538,8 +538,8 @@ GrB_Info Complex_init (bool builtin_complex)
     {
         // create user-defined versions
         #if GxB_STDC_VERSION >= 201112L
-        double complex C_1 = ONE ;
-        double complex C_0 = ZERO ;
+        double _Complex C_1 = ONE ;
+        double _Complex C_0 = ZERO ;
         OK (GrB_Monoid_new_UDT (&Complex_plus_monoid,  Complex_plus,  &C_0)) ;
         OK (GrB_Monoid_new_UDT (&Complex_times_monoid, Complex_times, &C_1)) ;
         #endif

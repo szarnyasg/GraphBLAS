@@ -19,7 +19,7 @@
 static const char *MatrixFields [NFIELDS] =
 {
     "GraphBLAS",        // 0: "logical", "int8", ... "double",
-                        //    "single complex", or "double complex"
+                        //    "single complex", or "double _Complex"
     "s",                // 1: all scalar info goes here
     "p",                // 2: array of int64_t, size plen+1
     "i",                // 3: array of int64_t, size nzmax

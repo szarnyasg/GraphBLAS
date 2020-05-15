@@ -15,7 +15,7 @@
 //      add         a string with the name of the 'add' binary operator.
 //                  The operator must be commutative.
 //      type        the type of x and y for the multiply operator.
-//                  ('logical', 'int8', ... 'double complex').  optional.
+//                  ('logical', 'int8', ... 'double _Complex').  optional.
 
 #include "GB_mex.h"
 
