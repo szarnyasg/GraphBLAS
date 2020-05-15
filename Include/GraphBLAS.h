@@ -209,20 +209,7 @@
 // definitions for complex types
 //------------------------------------------------------------------------------
 
-#ifdef __cplusplus
-
-    // C++ complex types
-    #include <cmath>
-    #include <complex>
-    #undef I
-    using namespace std ;
-    typedef complex<float>  GxB_FC32_t ;
-    typedef complex<double> GxB_FC64_t ;
-
-    #define GxB_CMPLXF(real,imag) GxB_FC32_t(real, imag)
-    #define GxB_CMPLX(real,imag)  GxB_FC64_t(real, imag)
-
-#elif ( _MSC_VER && !__INTEL_COMPILER )
+#if ( _MSC_VER && !__INTEL_COMPILER )
 
     // Microsoft Windows complex types
     #include <complex.h>
