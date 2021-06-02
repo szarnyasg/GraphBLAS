@@ -12,6 +12,7 @@ jobs:
       - name: Replace GxB with GzB
         run: |
           rename 's/GxB/GzB/' Source/*.c
+          ag GxB -l
           ag GxB -l | xargs sed -i 's/GxB/GzB/g'
       - name: Compile
         run: |
