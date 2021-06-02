@@ -11,8 +11,8 @@ jobs:
           sudo apt install -y silversearcher-ag rename
       - name: Replace GxB with GzB
         run: |
-          ag gxb -l
-          ag gxb -l | xargs sed -i 's/GxB/GzB/g'
+          ag -l gxb | xargs sed -i 's/GxB/GzB/g'
+          rename 's/GxB/GzB/' Source/*.c
       - name: Compile
         run: |
           cd build
