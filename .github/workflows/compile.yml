@@ -8,11 +8,10 @@ jobs:
         uses: actions/checkout@v1
       - name: Install dependencies
         run: |
-          sudo apt install -y silversearcher-ag rename
+          sudo apt install -y ack-grep rename
       - name: Replace GxB with GzB
         run: |
-          ls
-          ag -l gxb | xargs sed -i 's/GxB/GzB/g'
+          ack -l GxB | xargs sed -i 's/GxB/GzB/g'
           rename 's/GxB/GzB/' Source/*.c
       - name: Compile
         run: |
