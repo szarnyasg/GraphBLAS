@@ -1,4 +1,4 @@
-name: Build LaTeX document
+name: Compile GzB variant
 on: [push]
 jobs:
   build_latex:
